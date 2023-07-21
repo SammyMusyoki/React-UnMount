@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import UserProfile from './UserProfile.jsx'
+import FunnyButton from './FunnyButton.jsx'
 import './style.css';
 
 export default function App() {
@@ -27,6 +28,9 @@ export default function App() {
       favouriteColors = {["green", "blue", "red"]}
       isAvailable = {false}
       />
+
+      <FunnyButton/>
+      <FunnyButton>I got Content!</FunnyButton>
     </div>
   );
 }
