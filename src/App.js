@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import UserProfile from './UserProfile.jsx'
 import './style.css';
 
 export default function App() {
@@ -19,6 +20,13 @@ export default function App() {
   return (
     <div>
       <p className="time">Current time: {time}</p>
+
+      <UserProfile 
+      name= 'Sammy'
+      age = {20}
+      favouriteColors = {["green", "blue", "red"]}
+      isAvailable = {false}
+      />
     </div>
   );
 }
